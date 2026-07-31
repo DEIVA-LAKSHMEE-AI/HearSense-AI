@@ -1,15 +1,12 @@
 import axios from "axios";
 
-const API_URL = "https://hearsense-ai.onrender.com";
+const API = "https://hearsense-ai.onrender.com";
 
 /**
  * Analyze a saved audiogram
  */
 export const analyzeAudiogram = async (audiogramId: number) => {
-  const response = await axios.get(
-    `${API}/analysis/${audiogramId}`
-  );
-
+  const response = await axios.get(`${API}/analysis/${audiogramId}`);
   return response.data;
 };
 
@@ -17,12 +14,9 @@ export const analyzeAudiogram = async (audiogramId: number) => {
  * Download AI Clinical Report (PDF)
  */
 export const downloadClinicalReport = async (audiogramId: number) => {
-  const response = await axios.get(
-    `${API}/report/${audiogramId}`,
-    {
-      responseType: "blob",
-    }
-  );
+  const response = await axios.get(`${API}/report/${audiogramId}`, {
+    responseType: "blob",
+  });
 
   return response.data;
 };
@@ -31,9 +25,6 @@ export const downloadClinicalReport = async (audiogramId: number) => {
  * Get AI Analysis
  */
 export const getAnalysis = async (audiogramId: number) => {
-  const response = await axios.get(
-    `${API}/analysis/${audiogramId}`
-  );
-
+  const response = await axios.get(`${API}/analysis/${audiogramId}`);
   return response.data;
 };
