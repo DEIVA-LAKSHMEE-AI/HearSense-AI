@@ -49,11 +49,8 @@ async def upload_audiogram(file: UploadFile = File(...)):
 
     return {
     "status": "success",
-    "filename": filename,
-    "original": result["original"],
-    "processed": result["processed"],
-    "grid_image": grid["grid_image"],
-    "vertical_lines": grid["vertical_lines"],
-    "horizontal_lines": grid["horizontal_lines"],
-    "cropped_graph": crop["cropped"],
-    }
+    "message": "Image processed successfully. Automatic threshold extraction is not available. Please enter thresholds manually to run AI analysis.",
+    "original": original_path,
+    "processed": processed_path,
+    "cropped_graph": cropped_path
+}
