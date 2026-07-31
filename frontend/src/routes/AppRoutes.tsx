@@ -4,7 +4,7 @@ import Dashboard from "../pages/Dashboard/Dashboard";
 import Patients from "../pages/Patients/Patients";
 import Audiogram from "../pages/Audiogram/Audiogram";
 import Reports from "../pages/Reports/Reports";
-import Analytics from "../pages/analytics/Analytics";
+import Analytics from "../pages/Analytics/Analytics";
 import About from "../pages/about/About";
 
 export default function AppRoutes() {
