@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://127.0.0.1:8000/audiograms";
+const API_URL = "https://hearsense-ai.onrender.com/audiograms";
 
 export interface AudiogramData {
   patient_id: number;

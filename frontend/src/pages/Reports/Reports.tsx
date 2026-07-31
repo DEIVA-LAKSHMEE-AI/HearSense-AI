@@ -17,7 +17,7 @@ export default function Reports() {
   }, []);
 
   const loadReports = async () => {
-    const res = await fetch("http://127.0.0.1:8000/audiograms");
+    const res = await fetch("https://hearsense-ai.onrender.com/audiograms");
     const data = await res.json();
     setReports(data);
   };
@@ -29,7 +29,7 @@ const filtered = reports.filter((r) =>
 const deleteReport = async (id: number) => {
   if (!window.confirm("Delete this report?")) return;
 
-  await fetch(`http://127.0.0.1:8000/audiograms/${id}`, {
+  await fetch(`https://hearsense-ai.onrender.com/audiograms/${id}`, {
     method: "DELETE",
   });
 
@@ -77,7 +77,7 @@ const deleteReport = async (id: number) => {
                     className="text-blue-700 mr-4"
                     onClick={() =>
                         window.open(
-                        `http://127.0.0.1:8000/report/${report.id}`,
+                        `https://hearsense-ai.onrender.com/report/${report.id}`,
                         "_blank"
                         )
                     }

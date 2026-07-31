@@ -532,7 +532,7 @@ export default function Audiogram() {
           <div>
             <h3 className="font-bold">Original</h3>
             <img
-              src={`http://127.0.0.1:8000/${imageResult.original.replace(/\\/g, "/")}`}
+              src={`https://hearsense-ai.onrender.com/${imageResult.original.replace(/\\/g, "/")}`}
               className="rounded-lg border"
             />
           </div>
@@ -540,7 +540,7 @@ export default function Audiogram() {
           <div>
             <h3 className="font-bold">Processed</h3>
             <img
-              src={`http://127.0.0.1:8000/${imageResult.processed.replace(/\\/g, "/")}`}
+              src={`https://hearsense-ai.onrender.com/${imageResult.processed.replace(/\\/g, "/")}`}
               className="rounded-lg border"
             />
           </div>
@@ -548,7 +548,7 @@ export default function Audiogram() {
           <div>
             <h3 className="font-bold">Grid Detection</h3>
             <img
-              src={`http://127.0.0.1:8000/${imageResult.grid_image.replace(/\\/g, "/")}`}
+              src={`/${imageResult.grid_image.replace(/\\/g, "/")}`}
               className="rounded-lg border"
             />
           </div>
@@ -556,7 +556,7 @@ export default function Audiogram() {
           <div>
             <h3 className="font-bold">Cropped Graph</h3>
             <img
-              src={`http://127.0.0.1:8000/${imageResult.cropped_graph.replace(/\\/g, "/")}`}
+              src={`https://hearsense-ai.onrender.com/${imageResult.cropped_graph.replace(/\\/g, "/")}`}
               className="rounded-lg border"
             />
           </div>

@@ -12,7 +12,7 @@ export default function Analytics() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:8000/analytics")
+    fetch("https://hearsense-ai.onrender.com/analytics")
       .then((res) => res.json())
       .then((data) => {
         setAnalytics(data);
